@@ -1,0 +1,1219 @@
+<sdf version='1.7'>
+  <model name='spot'>
+    <link name='base_link'>
+      <inertial>
+        <pose>-0.002817 0 -0.006338 0 -0 0</pose>
+        <mass>1.42</mass>
+        <inertia>
+          <ixx>0.0038588</ixx>
+          <ixy>0</ixy>
+          <ixz>-6.46479e-05</ixz>
+          <iyy>0.00189723</iyy>
+          <iyz>0</iyz>
+          <izz>0.00393826</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_fixed_joint_lump__back_collision'>
+        <pose>-0.16 0 0.006 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.114 0.075 0.085</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__back_bracket_collision_1'>
+        <pose>-0.1 0 0 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.025 0.075 0.085</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__base_inertia_collision_2'>
+        <pose>0 0 0 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.114 0.2 0.1</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__battery_collision_3'>
+        <pose>-0.01 0 -0.0225 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.048 0.145 0.026</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__front_collision_4'>
+        <pose>0.16 0 0.006 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.114 0.045 0.085</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__front_bracket_collision_5'>
+        <pose>0.1 0 0 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.025 0.075 0.085</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__chassis_left_collision_6'>
+        <pose>0 0.052 0 1.5708 1.5708 0</pose>
+        <geometry>
+          <box>
+            <size>0.06 0.15 0.006</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__chassis_right_collision_7'>
+        <pose>0 -0.052 0 -1.5708 1.5708 0</pose>
+        <geometry>
+          <box>
+            <size>0.06 0.15 0.006</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='base_link_fixed_joint_lump__back_visual'>
+        <pose>-0.16 0.035 -0.045 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/Back.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__back_bracket_visual_1'>
+        <pose>-0.16 0.035 -0.045 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/Back_Bracket.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__base_inertia_visual_2'>
+        <pose>-0.16 0.035 -0.045 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/MAINBODY.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__battery_visual_3'>
+        <pose>-0.16 0.035 -0.0445 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/Battery.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__front_visual_4'>
+        <pose>-0.16 0.035 -0.045 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/Front.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__front_bracket_visual_5'>
+        <pose>-0.16 0.035 -0.045 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/Front_Bracket.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__chassis_left_visual_6'>
+        <pose>0.016 0.055 0 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/Chassis_Left_Side.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__chassis_right_visual_7'>
+        <pose>-0.016 -0.055 0 -1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/Chassis_Right_Side.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='motor_back_left_hip' type='revolute'>
+      <pose relative_to='base_link'>-0.1365 0.0394 0.022 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>back_left_hip</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1.04</lower>
+          <upper>1.04</upper>
+          <effort>4</effort>
+          <velocity>4</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='back_left_hip'>
+      <pose relative_to='motor_back_left_hip'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0.075 0 0 -0 0</pose>
+        <mass>0.2</mass>
+        <inertia>
+          <ixx>0.000140833</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000112083</iyy>
+          <iyz>0</iyz>
+          <izz>0.000112083</izz>
+        </inertia>
+      </inertial>
+      <collision name='back_left_hip_collision'>
+        <pose>0.015 0.01 -0.01 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.065 0.065</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='back_left_hip_visual'>
+        <pose>-0.25 -0.0044 -0.067 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/LEFT_HIP.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='motor_back_left_upper_leg' type='revolute'>
+      <pose relative_to='back_left_hip'>0.0015 0.045 -0.0087 0 -0 0</pose>
+      <parent>back_left_hip</parent>
+      <child>back_left_upper_leg</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>2.59</upper>
+          <effort>4</effort>
+          <velocity>4</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='back_left_upper_leg'>
+      <pose relative_to='motor_back_left_upper_leg'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.005 0.0175 -0.055 0 -0 0</pose>
+        <mass>0.13</mass>
+        <inertia>
+          <ixx>0.000144354</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000144354</iyy>
+          <iyz>0</iyz>
+          <izz>2.65417e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='back_left_upper_leg_collision'>
+        <pose>0 0.02 -0.05 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.035 0.035 0.11</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='back_left_upper_leg_visual'>
+        <pose>-0.252 -0.05 -0.055 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/LEFT_UPPER_LEG.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='motor_back_left_lower_leg' type='revolute'>
+      <pose relative_to='back_left_upper_leg'>-0.005 0.018 -0.109 0 -0 0</pose>
+      <parent>back_left_upper_leg</parent>
+      <child>back_left_lower_leg</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-2.9</lower>
+          <upper>1.5708</upper>
+          <effort>4</effort>
+          <velocity>4</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='back_left_lower_leg'>
+      <pose relative_to='motor_back_left_lower_leg'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.009091 0 -0.066045 0 -0 0</pose>
+        <mass>0.055</mass>
+        <inertia>
+          <ixx>8.87261e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>3.02273e-06</ixz>
+          <iyy>8.84619e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.3465e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='back_left_lower_leg_collision'>
+        <pose>0 0 -0.06 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.035 0.035 0.12</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='back_left_lower_leg_fixed_joint_lump__back_left_foot_collision_1'>
+        <pose>-0.247 -0.068 0.0535 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/LEFT_FOOT.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1e+06</kp>
+              <kd>1</kd>
+              <max_vel>0</max_vel>
+              <min_depth>0.001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.8</mu>
+              <mu2>0.8</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='back_left_lower_leg_visual'>
+        <pose>-0.247 -0.068 0.0535 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/LEFT_LOWER_LEG.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='back_left_lower_leg_fixed_joint_lump__back_left_foot_visual_1'>
+        <pose>-0.247 -0.068 0.0535 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/LEFT_FOOT.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='motor_back_right_hip' type='revolute'>
+      <pose relative_to='base_link'>-0.1365 -0.0394 0.022 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>back_right_hip</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1.04</lower>
+          <upper>1.04</upper>
+          <effort>4</effort>
+          <velocity>4</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='back_right_hip'>
+      <pose relative_to='motor_back_right_hip'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 -0.075 0 0 -0 0</pose>
+        <mass>0.2</mass>
+        <inertia>
+          <ixx>0.000140833</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000112083</iyy>
+          <iyz>0</iyz>
+          <izz>0.000112083</izz>
+        </inertia>
+      </inertial>
+      <collision name='back_right_hip_collision'>
+        <pose>0.015 -0.01 -0.01 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.065 0.065</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='back_right_hip_visual'>
+        <pose>-0.25 0.074 -0.067 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/RIGHT_HIP.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='motor_back_right_upper_leg' type='revolute'>
+      <pose relative_to='back_right_hip'>0.0015 -0.045 -0.0087 0 -0 0</pose>
+      <parent>back_right_hip</parent>
+      <child>back_right_upper_leg</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>2.59</upper>
+          <effort>4</effort>
+          <velocity>4</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='back_right_upper_leg'>
+      <pose relative_to='motor_back_right_upper_leg'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.005 -0.0175 -0.055 0 -0 0</pose>
+        <mass>0.13</mass>
+        <inertia>
+          <ixx>0.000144354</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000144354</iyy>
+          <iyz>0</iyz>
+          <izz>2.65417e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='back_right_upper_leg_collision'>
+        <pose>0 -0.02 -0.05 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.035 0.035 0.11</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='back_right_upper_leg_visual'>
+        <pose>-0.252 0.12 -0.055 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/RIGHT_UPPER_LEG.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='motor_back_right_lower_leg' type='revolute'>
+      <pose relative_to='back_right_upper_leg'>-0.005 -0.018 -0.109 0 -0 0</pose>
+      <parent>back_right_upper_leg</parent>
+      <child>back_right_lower_leg</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-2.9</lower>
+          <upper>1.5708</upper>
+          <effort>4</effort>
+          <velocity>4</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='back_right_lower_leg'>
+      <pose relative_to='motor_back_right_lower_leg'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.009091 0 -0.066045 0 -0 0</pose>
+        <mass>0.055</mass>
+        <inertia>
+          <ixx>8.87261e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>3.02273e-06</ixz>
+          <iyy>8.84619e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.3465e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='back_right_lower_leg_collision'>
+        <pose>0 0 -0.06 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.035 0.035 0.12</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='back_right_lower_leg_fixed_joint_lump__back_right_foot_collision_1'>
+        <pose>-0.247 0.138 0.0535 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/RIGHT_FOOT.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1e+06</kp>
+              <kd>1</kd>
+              <max_vel>0</max_vel>
+              <min_depth>0.001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.8</mu>
+              <mu2>0.8</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='back_right_lower_leg_visual'>
+        <pose>-0.247 0.138 0.0535 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/RIGHT_LOWER_LEG.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='back_right_lower_leg_fixed_joint_lump__back_right_foot_visual_1'>
+        <pose>-0.247 0.138 0.0535 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/RIGHT_FOOT.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='motor_front_left_hip' type='revolute'>
+      <pose relative_to='base_link'>0.0915 0.0394 0.022 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>front_left_hip</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1.04</lower>
+          <upper>1.04</upper>
+          <effort>4</effort>
+          <velocity>4</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='front_left_hip'>
+      <pose relative_to='motor_front_left_hip'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 0.075 0 0 -0 0</pose>
+        <mass>0.2</mass>
+        <inertia>
+          <ixx>0.000140833</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000112083</iyy>
+          <iyz>0</iyz>
+          <izz>0.000112083</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_left_hip_collision'>
+        <pose>0.015 0.01 -0.01 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.065 0.065</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='front_left_hip_visual'>
+        <pose>-0.25 -0.0044 -0.067 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/LEFT_HIP.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='motor_front_left_upper_leg' type='revolute'>
+      <pose relative_to='front_left_hip'>0.0015 0.045 -0.0087 0 -0 0</pose>
+      <parent>front_left_hip</parent>
+      <child>front_left_upper_leg</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>2.59</upper>
+          <effort>4</effort>
+          <velocity>4</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='front_left_upper_leg'>
+      <pose relative_to='motor_front_left_upper_leg'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.005 0.0175 -0.055 0 -0 0</pose>
+        <mass>0.13</mass>
+        <inertia>
+          <ixx>0.000144354</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000144354</iyy>
+          <iyz>0</iyz>
+          <izz>2.65417e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_left_upper_leg_collision'>
+        <pose>0 0.02 -0.05 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.035 0.035 0.11</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='front_left_upper_leg_visual'>
+        <pose>-0.252 -0.05 -0.055 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/LEFT_UPPER_LEG.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='motor_front_left_lower_leg' type='revolute'>
+      <pose relative_to='front_left_upper_leg'>-0.005 0.018 -0.109 0 -0 0</pose>
+      <parent>front_left_upper_leg</parent>
+      <child>front_left_lower_leg</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-2.9</lower>
+          <upper>1.5708</upper>
+          <effort>4</effort>
+          <velocity>4</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='front_left_lower_leg'>
+      <pose relative_to='motor_front_left_lower_leg'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.009091 0 -0.066045 0 -0 0</pose>
+        <mass>0.055</mass>
+        <inertia>
+          <ixx>8.87261e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>3.02273e-06</ixz>
+          <iyy>8.84619e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.3465e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_left_lower_leg_collision'>
+        <pose>0 0 -0.06 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.035 0.035 0.12</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='front_left_lower_leg_fixed_joint_lump__front_left_foot_collision_1'>
+        <pose>-0.247 -0.068 0.0535 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/LEFT_FOOT.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1e+06</kp>
+              <kd>1</kd>
+              <max_vel>0</max_vel>
+              <min_depth>0.001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.8</mu>
+              <mu2>0.8</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='front_left_lower_leg_visual'>
+        <pose>-0.247 -0.068 0.0535 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/LEFT_LOWER_LEG.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='front_left_lower_leg_fixed_joint_lump__front_left_foot_visual_1'>
+        <pose>-0.247 -0.068 0.0535 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/LEFT_FOOT.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='motor_front_right_hip' type='revolute'>
+      <pose relative_to='base_link'>0.0915 -0.0394 0.022 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>front_right_hip</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1.04</lower>
+          <upper>1.04</upper>
+          <effort>4</effort>
+          <velocity>4</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='front_right_hip'>
+      <pose relative_to='motor_front_right_hip'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 -0.075 0 0 -0 0</pose>
+        <mass>0.2</mass>
+        <inertia>
+          <ixx>0.000140833</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000112083</iyy>
+          <iyz>0</iyz>
+          <izz>0.000112083</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_right_hip_collision'>
+        <pose>0.015 -0.01 -0.01 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.065 0.065</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='front_right_hip_visual'>
+        <pose>-0.25 0.074 -0.067 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/RIGHT_HIP.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='motor_front_right_upper_leg' type='revolute'>
+      <pose relative_to='front_right_hip'>0.0015 -0.045 -0.0087 0 -0 0</pose>
+      <parent>front_right_hip</parent>
+      <child>front_right_upper_leg</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1.5708</lower>
+          <upper>2.59</upper>
+          <effort>4</effort>
+          <velocity>4</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='front_right_upper_leg'>
+      <pose relative_to='motor_front_right_upper_leg'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.005 -0.0175 -0.055 0 -0 0</pose>
+        <mass>0.13</mass>
+        <inertia>
+          <ixx>0.000144354</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.000144354</iyy>
+          <iyz>0</iyz>
+          <izz>2.65417e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_right_upper_leg_collision'>
+        <pose>0 -0.02 -0.05 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.035 0.035 0.11</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='front_right_upper_leg_visual'>
+        <pose>-0.252 0.12 -0.055 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/RIGHT_UPPER_LEG.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name='motor_front_right_lower_leg' type='revolute'>
+      <pose relative_to='front_right_upper_leg'>-0.005 -0.018 -0.109 0 -0 0</pose>
+      <parent>front_right_upper_leg</parent>
+      <child>front_right_lower_leg</child>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-2.9</lower>
+          <upper>1.5708</upper>
+          <effort>4</effort>
+          <velocity>4</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='front_right_lower_leg'>
+      <pose relative_to='motor_front_right_lower_leg'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0.009091 0 -0.066045 0 -0 0</pose>
+        <mass>0.055</mass>
+        <inertia>
+          <ixx>8.87261e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>3.02273e-06</ixz>
+          <iyy>8.84619e-05</iyy>
+          <iyz>0</iyz>
+          <izz>1.3465e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_right_lower_leg_collision'>
+        <pose>0 0 -0.06 0 -0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.035 0.035 0.12</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='front_right_lower_leg_fixed_joint_lump__front_right_foot_collision_1'>
+        <pose>-0.247 0.138 0.0535 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/RIGHT_FOOT.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <kp>1e+06</kp>
+              <kd>1</kd>
+              <max_vel>0</max_vel>
+              <min_depth>0.001</min_depth>
+            </ode>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.8</mu>
+              <mu2>0.8</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='front_right_lower_leg_visual'>
+        <pose>-0.247 0.138 0.0535 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/RIGHT_LOWER_LEG.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='front_right_lower_leg_fixed_joint_lump__front_right_foot_visual_1'>
+        <pose>-0.247 0.138 0.0535 0 -0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://spot_mini_ros/stl/OpenQuadruped/RIGHT_FOOT.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Orange</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+    </link>
+    <plugin name='gazebo_ros_imu_controller' filename='libgazebo_ros_imu.so'>
+      <robotNamespace>/spot</robotNamespace>
+      <updateRate>50</updateRate>
+      <topicName>imu/data</topicName>
+      <serviceName>imu/service</serviceName>
+      <bodyName>base_link</bodyName>
+      <gaussianNoise>0</gaussianNoise>
+      <rpyOffsets>0 0 0</rpyOffsets>
+      <alwaysOn>1</alwaysOn>
+      <gaussianNoise>0</gaussianNoise>
+    </plugin>
+    <plugin name='p3d_base_controller' filename='libgazebo_ros_p3d.so'>
+      <alwaysOn>1</alwaysOn>
+      <bodyName>base_link</bodyName>
+      <updateRate>50</updateRate>
+      <topicName>odom</topicName>
+      <gaussianNoise>0.01</gaussianNoise>
+      <frameName>world</frameName>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <rpyOffsets>0 0 0</rpyOffsets>
+    </plugin>
+    <static>0</static>
+    <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
+      <robotNamespace>/spot</robotNamespace>
+    </plugin>
+  </model>
+</sdf>
